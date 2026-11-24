@@ -1,0 +1,14 @@
+{
+  "name": "PHP & MariaDB",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "forwardPorts": [8080, 3306],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "cweijan.vscode-mysql-client2"
+      ]
+    }
+  }
+}
