@@ -3,11 +3,16 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-  "forwardPorts": [8080, 3306],
+  "forwardPorts": [80, 3306],
   "customizations": {
     "vscode": {
-      "extensions": [
-        "cweijan.vscode-mysql-client2"
+      "settings": {
+        "files.exclude": {
+          ".devcontainer": true
+        }
+      },
+    "extensions": [
+      "cweijan.vscode-mysql-client2"
       ]
     }
   }
